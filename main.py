@@ -9,9 +9,9 @@ class Book:
 class Customer:
     def __init__(self, name, email):
         self.name = name
-        self.email = email
+        self.email = email 
 
-# Define the Order class
+# Define the Order class (g)
 class Order:
     def __init__(self, customer):
         self.customer = customer
@@ -20,32 +20,32 @@ class Order:
     def add_book(self, book):
         self.books.append(book)
 
-# Define the Fiction subclass of Book
+# Define the Fiction subclass of Book (h)
 class Fiction(Book):
     def __init__(self, title, author, price, genre):
         super().__init__(title, author, price)
-        self.genre = genre
+        self.genre = genre 
 
     def apply_discount(self):
-        self.price *= 0.8  # 20% discount for fiction books
+        self.price *= 0.8  # 20% discount for fiction books (k)
 
-# Define the NonFiction subclass of Book
+# Define the NonFiction subclass of Book (h)
 class NonFiction(Book):
     def __init__(self, title, author, price, subject):
         super().__init__(title, author, price)
         self.subject = subject
 
     def apply_discount(self):
-        self.price *= 0.9  # 10% discount for non-fiction books
+        self.price *= 0.9  # 10% discount for non-fiction books (k)
 
-# Function to process the order
+# Function to process the order (i)
 def process_order(customer, books):
     order = Order(customer)
     for book in books:
         order.add_book(book)
     return order
 
-# Function to display available books and let the user choose
+# Function to display available books and let the user choose (j, i)
 def select_books(books):
     print("Available Books:")
     for i, book in enumerate(books, 1):
@@ -67,7 +67,7 @@ books = [
     NonFiction("Educated: A Memoir", "Tara Westover", 14.99, "Memoir")
 ]
 
-# Welcome message and input customer details
+# Welcome message and input customer details (i)
 print("Welcome to the Online Bookstore!")
 customer_name = input("Enter your name: ")
 customer_email = input("Enter your email: ")
