@@ -49,7 +49,7 @@ def process_order(customer, books):
 def select_books(books):
     print("Available Books:")
     for i, book in enumerate(books, 1):
-        print(f"{i}. {book.title} by {book.author} - ${book.price}")
+        print(f"{i}. {book.title} by {book.author} - {book.price}€")
     
     choices = input("Enter the numbers of books you want to purchase (separated by commas): ").split(',')
     selected_books = []
