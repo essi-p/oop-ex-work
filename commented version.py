@@ -94,3 +94,4 @@ for book in order.books:
 total_price = sum(book.price for book in order.books)
 print("Total Price:", total_price, "€")  # Calculate and print total price
 
+
