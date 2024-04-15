@@ -51,7 +51,7 @@ def process_order(customer, books):
         order.add_book(book)  # Add each selected book to the order
     return order
 
-# Function to display available books and let the user choose
+# Function to display available books and let the user choose, integration of data structure
 def select_books(books):
     print("Available Books:")
     for i, book in enumerate(books, 1):
